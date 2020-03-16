@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Produto View</title>
+</head>
+<h1>Produto View</h1>
+  <p th:if="${produto == null}">Erro: Nenhum produto encontrado</p>
+  <p th:unless="${produto == null}" 
+  th:text="${produto.codigo}">
+  </p>
+  <p th:unless="${produto == null}" 
+  th:text="${produto.nome}">
+  </p>
+  <p th:unless="${produto == null}" 
+  th:text="${produto.valor}">
+  </p>
+  <p th:unless="${produto == null}" 
+  th:text="${produto.estoque}">
+  </p>
+</html>
